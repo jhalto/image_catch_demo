@@ -37,9 +37,9 @@ class _PrescriptionImageState extends State<PrescriptionImage> {
         children: [
           Text("if you want to get a image click the below button"),
           Expanded(child: _prescriptionSource==null?IconButton(onPressed: (){
-            getPrescriptionVideo();
+            getPrescription();
           }, icon: Icon(CupertinoIcons.photo_camera))
-              :Image.file(File(_prescriptionVideo!.path))
+              :Image.file(File(_prescriptionSource!.path))
           )
         ],
       ),
